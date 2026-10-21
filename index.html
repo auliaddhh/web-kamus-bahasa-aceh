@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cari arti kata Bahasa Aceh dan padanannya dalam Bahasa Indonesia melalui Kamus Aceh–Indonesia digital.">
+  <title>Kamus Aceh–Indonesia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#beranda" aria-label="Kamus Aceh Indonesia beranda"><span class="brand-icon">A</span><span>Kamus<span class="brand-muted">Aceh</span></span></a>
+    <nav><a href="#beranda" class="active">Beranda</a><a href="#kamus">Jelajahi Kamus</a><a href="#tentang">Tentang</a></nav>
+  </header>
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span> KAMUS BAHASA DAERAH DIGITAL</span>
+        <h1>Kenali kata,<br><span>jaga bahasa.</span></h1>
+        <p>Temukan arti kosakata Bahasa Aceh dan padanannya dalam Bahasa Indonesia dengan mudah.</p>
+        <div class="hero-stats"><div><strong id="hero-total">3.150+</strong><span>Entri kamus</span></div><div><strong>2 arah</strong><span>Pencarian bahasa</span></div></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="art-card card-back"><span>BAHASA</span><b>Budaya</b><small>Warisan kita</small></div><div class="art-card card-front"><span class="mini-label">KATA HARI INI</span><b id="featured-word">Peumulia</b><div class="art-line"></div><p id="featured-meaning">Memuliakan; menghormati</p><span class="art-mark">“</span></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div></div>
+    </section>
+    <section class="search-section" id="kamus">
+      <div class="section-heading"><div><span class="eyebrow">TEMUKAN MAKNA</span><h2>Cari di dalam kamus</h2><p>Ketik kata yang ingin kamu ketahui artinya.</p></div><span class="total-pill"><span class="dot"></span><span id="total-label">Memuat kamus…</span></span></div>
+      <div class="search-panel">
+        <div class="search-controls"><label class="select-wrap"><span class="sr-only">Arah pencarian</span><select id="direction"><option value="aceh">Aceh → Indonesia</option><option value="indonesia">Indonesia → Aceh</option></select></label><label class="search-input"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Kata pencarian</span><input id="query" type="search" placeholder="Contoh: bu, makan, saudara…" autocomplete="off"><button id="clear" class="clear-btn" type="button" aria-label="Hapus pencarian" hidden>×</button></label><button id="search-btn" class="primary-btn" type="button">Cari kata <span>→</span></button></div>
+        <div class="search-hint"><span>↳</span> Pencarian mendukung sebagian kata, bukan hanya kata lengkap.</div>
+      </div>
+      <div class="results-top"><div><h3 id="results-title">Jelajahi kosakata</h3><p id="results-subtitle">Berikut beberapa entri dari kamus.</p></div><label class="sort-label">Urutkan <select id="sort"><option value="az">A–Z</option><option value="za">Z–A</option></select></label></div>
+      <div id="results" class="results-grid" aria-live="polite"><div class="loading">Sedang memuat data kamus…</div></div>
+      <div class="pagination"><span id="page-info">Halaman 1</span><div><button id="prev" class="page-btn" type="button" disabled>← Sebelumnya</button><button id="next" class="page-btn" type="button">Berikutnya →</button></div></div>
+    </section>
+    <section class="about" id="tentang"><div class="about-icon">✳</div><div><span class="eyebrow">TENTANG PROYEK</span><h2>Bahasa adalah bagian dari identitas.</h2><p>Website ini membantu pengguna menjelajahi kosakata Aceh beserta padanan Bahasa Indonesianya. Data bersumber dari file <em>Kamus Budaya Aceh-Indonesia (2022)</em> yang digunakan dalam proyek ini.</p><p class="source-note">Catatan: arti kata ditampilkan berdasarkan data sumber dan dapat memuat konteks pemakaian atau variasi daerah.</p></div></section>
+  </main>
+  <footer><a class="brand footer-brand" href="#beranda"><span class="brand-icon">A</span><span>Kamus<span class="brand-muted">Aceh</span></span></a><span>Proyek pelestarian kosakata daerah · Kamus Aceh–Indonesia</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
